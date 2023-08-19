@@ -28,7 +28,7 @@ nav ul li {
 }
 .brand img {
   width: 44px;
-  padding: 0px 8px;
+  padding: 0 8px;
 }
 .brand {
   display: flex;
@@ -37,8 +37,18 @@ nav ul li {
   font-size: 1.3rem;
 }
 .container {
-  min-height: 75vh;
+  min-height: 62vh;
+  background-color: black;
+  color: white;
+  font-family: "varela Round", sans-serif;
+  display: flex;
+  width: 70%;
+  margin: 23px auto;
+  border-radius: 12px;
+  background-image: url("Spotify Clone/covers/bg.jpg");
+  background-size: cover;
 }
+
 .bottom {
   position: sticky;
   height: 130px;
@@ -60,4 +70,37 @@ nav ul li {
 #myProgressBar {
   width: 80vw;
   text-align: center;
+  cursor: pointer;
+}
+.songItemContainer {
+  margin-top: 30px;
+}
+.songItem {
+  height: 50px;
+  width: 75%;
+  display: flex;
+  background-color: white;
+  color: black;
+  margin: 12px 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+.songItem img {
+  width: 43px;
+  margin: 0 23px;
+  border-radius: 50%;
+}
+.timestamp {
+  margin: 0 23px;
+  cursor: pointer;
+}
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: "varela Round", sans-serif;
+}
+.songInfo img {
+  opacity: 0;
+  transition: opacity is ease-in;
 }
